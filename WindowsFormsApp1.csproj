@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6ABD3598-B4EF-496A-911E-2DE5CB594518}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caesar.cs" />
+    <Compile Include="caesarkeydialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caesarkeydialog.Designer.cs">
+      <DependentUpon>caesarkeydialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="file_de.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="file_de.Designer.cs">
+      <DependentUpon>file_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="file_en.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="file_en.Designer.cs">
+      <DependentUpon>file_en.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage.Designer.cs">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="decode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="decode.Designer.cs">
+      <DependentUpon>decode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PTmethod_de.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PTmethod_de.Designer.cs">
+      <DependentUpon>PTmethod_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vigenere.cs" />
+    <Compile Include="encode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="encode.Designer.cs">
+      <DependentUpon>encode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PTmethod_en.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PTmethod_en.Designer.cs">
+      <DependentUpon>PTmethod_en.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aboutpage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="aboutpage.Designer.cs">
+      <DependentUpon>aboutpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="option.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="option.Designer.cs">
+      <DependentUpon>option.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vigkeydialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vigkeydialog.Designer.cs">
+      <DependentUpon>vigkeydialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="caesarkeydialog.resx">
+      <DependentUpon>caesarkeydialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="file_de.resx">
+      <DependentUpon>file_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="file_en.resx">
+      <DependentUpon>file_en.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homepage.resx">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="decode.resx">
+      <DependentUpon>decode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="encode.resx">
+      <DependentUpon>encode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PTmethod_de.resx">
+      <DependentUpon>PTmethod_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PTmethod_en.resx">
+      <DependentUpon>PTmethod_en.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aboutpage.resx">
+      <DependentUpon>aboutpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="option.resx">
+      <DependentUpon>option.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vigkeydialog.resx">
+      <DependentUpon>vigkeydialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
